@@ -8,7 +8,8 @@ const app = express();  // Start app
 
 mongoose.connect('mongodb+srv://devRadar:5KeYF1o0VnLZ0nCZ@cluster0-msvvd.mongodb.net/devRadar?retryWrites=true&w=majority', {
   useNewUrlParser: true,
-  useUnifiedTopology: true
+  useUnifiedTopology: true,
+  useCreateIndex: true,
 }); // Connect to MongoDB Atlas
 
 // Accept JSON requisitions
