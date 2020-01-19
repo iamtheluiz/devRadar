@@ -13,3 +13,10 @@ Tipos de Parâmetros:
 * Body: req.body (Dados para criação ou alteração de um registro)
 
 Don't Repeat Yourself (DRY)
+
+### Web (React)
+
+Conceitos importantes:
+* Componente: Bloco isolado de HTML, CSS e JS, o qual não interfere no restante da aplicação
+* Propriedade: Informações que um componente PAI passa para o componente FILHO
+* Estado: Informações mantidas pelo componente (Lembrar: Imutabilidade)
