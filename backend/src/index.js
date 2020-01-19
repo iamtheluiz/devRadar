@@ -1,5 +1,6 @@
 const express = require('express'); // Import express (server base)
 const mongoose = require('mongoose'); // Connection with MongoDB
+const cors = require('cors');
 
 const routes = require('./routes'); // Get application routes
 
@@ -11,6 +12,9 @@ mongoose.connect('mongodb+srv://devRadar:5KeYF1o0VnLZ0nCZ@cluster0-msvvd.mongodb
   useUnifiedTopology: true,
   useCreateIndex: true,
 }); // Connect to MongoDB Atlas
+
+// Enable cross origin request 
+app.use(cors());
 
 // Accept JSON requisitions
 app.use(express.json());
